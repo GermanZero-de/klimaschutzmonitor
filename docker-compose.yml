@@ -2,6 +2,7 @@ version: '3'
 
 services:
   djangoapp:
+    user: "1003"  # This is bene's uid on monitoring-test.localzero.net. Necessary to be able to write as the user on /db
     build: .
     volumes:
       - ./:/db
